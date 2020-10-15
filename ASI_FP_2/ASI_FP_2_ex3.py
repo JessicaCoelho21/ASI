@@ -1,6 +1,7 @@
 #Semana 2, Exercício 3
 import datetime
 
+#Classificação de pessoas tendo em conta a sua idade
 dates = ['12/08/2010', '21/06/1950', '05/06/2005', '03/01/1981', '21/05/2014']
 year = datetime.date.today().year
 
