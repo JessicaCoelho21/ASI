@@ -7,7 +7,7 @@ fp = open('dados.txt')
 nif = {}
 chaves = {'NIF', 'matricula', 'iuc'}
 
-#Resolver: fazer com que apareçam todos os nif's
+#Resolver: fazer com que apareçam todos os nif's no dicionário nif
 for conteudo in fp:
     conteudo = conteudo.strip().split(';')
     nif[conteudo[0]] = conteudo[2]

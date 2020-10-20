@@ -12,7 +12,7 @@ for conteudo in fp:
 print(alunos)
 
 #Ler o número de aluno a partir do teclado e fazer as pesquisas na hashtable pelo número lido
-numero = input("Que número deseja procurar?: ")
-print("Número: ", numero, ", Nome: ", alunos[numero])
+numero = input("Que número de aluno deseja procurar?: ")
+print("Número do aluno: ", numero, ", Nome do aluno: ", alunos[numero])
 
 fp.close()
