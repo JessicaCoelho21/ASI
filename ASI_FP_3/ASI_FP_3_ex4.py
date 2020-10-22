@@ -4,22 +4,43 @@
 # chave o NIF e o valor será uma hashtable contendo a matricula como chave e o
 # valorIUC como valor. A hashtable Imoveis deverá ter como chave o NIF e o valor será
 # uma hashtable contendo o artigoMatricial e o valor será a taxaIMI.
+
+veiculo = {}
+imovel = {}
 fp = open('dados2.txt', 'r')
 
-veiculos = {}
-imoveis = {}
-matricula = {}
-artigoMatricial = {}
+for linha in fp:
+    matricula = {}
 
-for conteudo in fp:
-    conteudo = conteudo.strip().split(';')
-    veiculos[conteudo[0]] = conteudo[2:4]
-    imoveis[conteudo[0]] = conteudo[4] + ", " + conteudo[6]
+    #remove os espaços em branco e divide por ;
+    linha = linha.strip().split(';')
 
+    if linha[0] in veiculo.keys():
+        matricula = veiculo[linha[0]]
+        matricula[linha[2]] = linha[3]
+        veiculo[linha[0]] = matricula
 
-print("Veículos: ", veiculos.items())
-print("Imóveis: ", imoveis.items())
+    else:
+        matricula[linha[2]] = linha[3]
+        veiculo[linha[0]] = matricula
 
+    artigo = {}
 
+    if linha[0] in imovel.keys():
+        artigo = imovel[linha[0]]
+        artigo[linha[4]] = linha[6]
+        imovel[linha[0]] = artigo
+
+    else:
+        artigo[linha[4]] = linha[6]
+        imovel[linha[0]] = artigo
 
 fp.close()
+print(veiculo)
+print(imovel)
+
+#NIF que pagou mais taxa de IMI
+
+
+
+#NIF que pagou mais impostos
