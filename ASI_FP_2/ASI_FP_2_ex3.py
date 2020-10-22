@@ -6,6 +6,7 @@ dates = ['12/08/2010', '21/06/1950', '05/06/2005', '03/01/1981', '21/05/2014']
 year = datetime.date.today().year
 
 for d in dates:
+    #vai buscar o ano das datas (posição 2 separadas por /)
     yearDates = (int)(d.split('/')[2])
     age = year - yearDates
     #age = 2020 - yearDates
