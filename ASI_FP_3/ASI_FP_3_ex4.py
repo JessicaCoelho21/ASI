@@ -6,6 +6,20 @@
 # uma hashtable contendo o artigoMatricial e o valor será a taxaIMI.
 fp = open('dados2.txt', 'r')
 
-print("A resolver...")
+veiculos = {}
+imoveis = {}
+matricula = {}
+artigoMatricial = {}
+
+for conteudo in fp:
+    conteudo = conteudo.strip().split(';')
+    veiculos[conteudo[0]] = conteudo[2:4]
+    imoveis[conteudo[0]] = conteudo[4] + ", " + conteudo[6]
+
+
+print("Veículos: ", veiculos.items())
+print("Imóveis: ", imoveis.items())
+
+
 
 fp.close()
