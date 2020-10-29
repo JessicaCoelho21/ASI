@@ -12,7 +12,7 @@ fp = open('dados2.txt', 'r')
 for linha in fp:
     matricula = {}
 
-    #remove os espaços em branco e divide por ;
+    # remove os espaços em branco e divide por ;
     linha = linha.strip().split(';')
 
     if linha[0] in veiculo.keys():
@@ -39,8 +39,8 @@ fp.close()
 print(veiculo)
 print(imovel)
 
-#NIF que pagou mais taxa de IMI
+# NIF que pagou mais taxa de IMI
 
 
 
-#NIF que pagou mais impostos
+# Total de impostos que cada NIF pagou
