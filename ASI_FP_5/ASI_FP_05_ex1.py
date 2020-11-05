@@ -8,6 +8,8 @@ def validarCC(cc):
     # 8 números, espaço, 1 número, espaço, 2 letras, 2 números
     ccRegex = re.search("[0-9]{8}\s[0-9]\s[A-Z]{2}[0-9]", cc)
 
+    #ccRegex = re.compile(r'^\d{8} \d [A-Z]{2}\d$')
+
     if (ccRegex):
         print("O número de cartão de cidadão obdece ao padrão.")
     else:
