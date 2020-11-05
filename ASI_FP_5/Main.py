@@ -1,5 +1,6 @@
 from ASI_FP_05_ex1 import validarCC
 from ASI_FP_05_ex2 import people, telephone
+from ASI_FP_05_ex3 import countUpperCase
 
 # Ficha de trabalho 5
 
@@ -10,8 +11,17 @@ from ASI_FP_05_ex2 import people, telephone
 print("-" * 70)
 
 # Exercício 2, alínea a)
-people()
+#people()
 
 # Exercício 2, alínea b)
-telephone()
+#telephone()
 
+print("-" * 70)
+
+# Exercício 3
+text = "Jessica Beatriz Silva Coelho"
+countUpperCase(text)
+
+print("-" * 70)
+
+# Exercício 4
