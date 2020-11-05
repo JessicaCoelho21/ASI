@@ -26,9 +26,11 @@ def people():
 # Acrescentar o prefixo 00351 a todos os números de telefone
 def telephone():
     for i in feminine:
+        # /A --> início do input
         i = re.sub("\A", "00351", i)
         print(i)
 
     for j in masculine:
+        # /A --> início do input
         j = re.sub("\A", "00351", j)
         print(j)
