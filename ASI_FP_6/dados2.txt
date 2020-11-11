@@ -1,0 +1,5 @@
+Jose Silva;17
+Ana Almeida;34
+Ricardo Fonseca;54
+Maria Costa;68
+Sofia Ferreira;10
