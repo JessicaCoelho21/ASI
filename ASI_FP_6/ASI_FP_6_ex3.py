@@ -3,6 +3,7 @@
 import re
 
 pattern = re.compile(r'^(.*): \$(.*)$')
+# ou pattern = re.compile(r'^(.*):\s\$(.*)$')
 
 def convert(price):
     priceFloat = float(price) * 0.8182

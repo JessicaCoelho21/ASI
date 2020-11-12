@@ -10,6 +10,7 @@ def convert(age):
 
 with open("dados2.txt") as fp:
     for str in fp:
+        #str = str.strip()
         list = pattern.match(str)
         # chama a função convert, passando como parâmetro o segundo grupo da lista que obdeceu ao padrão
         age = convert(list.group(2))
