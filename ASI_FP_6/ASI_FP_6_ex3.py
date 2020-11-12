@@ -1,5 +1,4 @@
 # Ficha de trabalho da semana 6, exercício 3
-
 import re
 
 pattern = re.compile(r'^(.*): \$(.*)$')
