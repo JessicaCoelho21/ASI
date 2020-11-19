@@ -1,0 +1,41 @@
+a) (criar grupos)
+groupadd -g 601 ANO1
+groupadd -g 602 ANO2
+groupadd -g 603 ANO3
+groupadd -g 700 INF
+groupadd -g 800 TEC
+groupadd -g 900 IPS
+
+b) (criar user e adicioná-lo a um grupo, adicionar o user a outro grupo, ver os grupos a que o user pertence)
+sudo useradd -N ANA -g INF
+sudo usermod -a -G ANO2 ANA
+groups ANA
+
+sudo useradd -N JOSE -g TEC
+sudo usermod -a -G ANO3 JOSE
+groups JOSE
+
+sudo useradd -N JOANA -g IPS
+sudo usermod -a -G ANO1 JOANA
+groups JOANA
+
+sudo useradd -N PAULO -g INF
+sudo usermod -a -G ANO1 PAULO
+groups PAULO
+
+c) (adicionar passwords para os utilizadores)
+sudo passwd ANA
+(password: ana)
+sudo passwd JOSE
+(password: jose)
+sudo passwd JOANA
+(password: joana)
+sudo passwd PAULO
+(password: paulo)
+
+d)
+	i) (bloquear acesso ao JOSE)
+	usermod -L JOSE
+	
+	ii) (desbloquear acesso ao JOSE)
+	usermod -U JOSE
