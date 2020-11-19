@@ -1,0 +1,2 @@
+Início da segunda parte da unidade curricular, sobre sistemas informáticos.
+Uso da VM com CentOS.
