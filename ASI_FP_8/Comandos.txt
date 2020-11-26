@@ -1,0 +1,22 @@
+-fdisk /dev/sdb
+
+-n
+	particao primaria 
+-p
+	1
+	+500M (mais 500 MB)
+-n
+	particao primaria 
+-p
+	2
+	+500M (mais 500 MB)
+
+ -t		(tipo da particao)
+	1 	(alterar tipo da particao 1)
+	8e 	(linux lvm)
+
+ -t		(tipo da particao)
+	2 	(alterar tipo da particao 2)
+	8e 	(linux lvm)
+
+-w 		(salva alteracoes)
