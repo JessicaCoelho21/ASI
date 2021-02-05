@@ -5,8 +5,8 @@ import Stats
 import Stats_v2
 
 # a)
-# out = Percentage.calculoPercentagem()
-# print(out)
+out = Percentage.calculoPercentagem()
+print(out)
 
 # versão do professor
 # outv2 = Percentage
@@ -14,7 +14,7 @@ import Stats_v2
 
 # b)
 mod = ReadLogFile.ler()
-#print(mod)
+# print(mod)
 
 # c)
 # Stats.Alarm()
@@ -24,5 +24,5 @@ mod = ReadLogFile.ler()
 # print(t)
 # print(o)
 
-result = Stats_v2.Total(mod)
-print(result)
+# result = Stats_v2.Total(mod)
+# print(result)

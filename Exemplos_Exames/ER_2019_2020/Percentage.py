@@ -6,12 +6,12 @@ def calculoPercentagem():
     with open("ficheiro.txt") as fp:
         for linhas in fp:
             pattern = re.compile(
-                r'^\/(?P<nome>\w{0,});'
+                r'^\/(?P<nome>\w*);'
                 r'(?P<dia>\d{2})\/(?P<mes>\d{2})\/(?P<ano>\d{4});'
-                r'(?P<espacoTotal>\d{1,});'
-                r'(?P<espacoOcupado>\d{1,})\;'
-                r'(?P<warning>\d{1,});'
-                r'(?P<critical>\d{1,})$')
+                r'(?P<espacoTotal>\d*);'
+                r'(?P<espacoOcupado>\d*)\;'
+                r'(?P<warning>\d*);'
+                r'(?P<critical>\d*)$')
 
             res = pattern.match(linhas)
             result = (int(res.group('espacoOcupado')) / int(res.group('espacoTotal'))) * 100
