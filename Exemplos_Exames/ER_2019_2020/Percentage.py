@@ -19,6 +19,6 @@ def calculoPercentagem():
 
             output = res1
 
-            print("Percentagem de espaço ocupado: ", res1)
+            #print("Percentagem de espaço ocupado: ", res1)
 
     return output
