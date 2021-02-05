@@ -25,5 +25,4 @@ def ler():
                                                         "PercWarning": float(linhas[4]),
                                                         "PercCritical": float(linhas[5])}}
 
-    #print(monitorizacao.items())
     return monitorizacao
