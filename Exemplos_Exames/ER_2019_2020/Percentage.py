@@ -20,6 +20,5 @@ def calculoPercentagem():
             output = res1
 
             print("Percentagem de espaço ocupado: ", res1)
-            # print("Ficheiro: ", linhas)
 
     return output
