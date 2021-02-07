@@ -1,15 +1,19 @@
 import LerFicheiro
 
-# b)
+# b) - Valor total de despesas por mês
 def DespesasMes():
     despesaMes = LerFicheiro.ler()
     desp = {}
-    dados = {}
 
+    # dp = mês
     for dp in despesaMes.keys():
+        # n = nome da despesa
         for n in despesaMes[dp].keys():
+            # t = valor a pagar (valores)
             for t in despesaMes[dp][n].keys():
+                # se existir "valores" na hashtable
                 if t.__contains__("valores"):
+                    # se o mês existir na hashtable desp
                     if dp in desp.keys():
                         preco = desp[dp]
                         preco = preco + despesaMes[dp][n][t]
@@ -21,7 +25,7 @@ def DespesasMes():
     print(desp.items())
 
 
-# c)
+# c) - Total de despesas por nome da despesa
 def DespesasTipo():
     tipos = LerFicheiro.ler()
     despTipo = {}
@@ -41,7 +45,7 @@ def DespesasTipo():
     print(despTipo.items())
 
 
-# d)
+# d) - Lista de despesa sem data de pagamento
 def DespesasPagar():
     tipos = LerFicheiro.ler()
 
